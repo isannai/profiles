@@ -140,6 +140,7 @@ isann profile pull file:///d:/profiles/example.env --engine llama --name example
 ```bash
 isann profile list --engine llama          # what is installed
 isann profile use  --engine llama --name example
+isann docker prepare llama
 isann docker create llama                  # restart to pick up the new .env
 isann docker wait  --engine llama          # block until it actually responds
 ```
